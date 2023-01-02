@@ -1,11 +1,17 @@
 /* See LICENSE file for copyright and license details. */
 
-/*
- * appearance
- *
- * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
- */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+/* appearance */
+
+/* font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html */
+static char *font = "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+	"Source Han Sans:pixelsize=12:antialias=true:autohint=true",
+	"Liberation Mono:pixelsize=12:antialias=true:autohint=true",
+	"Noto Sans CJK:pixelsize=12:antialias=true:autohint=true",
+	"Apple Color Emoji:pixelsize=12:antialias=true:autohint=true",
+};
+
 static int borderpx = 2;
 
 /*
@@ -29,11 +35,7 @@ char *vtiden = "\033[?6c";
 static float cwscale = 1.0;
 static float chscale = 1.0;
 
-/*
- * word delimiter string
- *
- * More advanced example: L" `'\"()[]{}"
- */
+/* word delimiter string. More advanced example: L" `'\"()[]{}" */
 wchar_t *worddelimiters = L" ";
 
 /* selection timeouts (in milliseconds) */
@@ -62,9 +64,7 @@ static double maxlatency = 33;
  */
 static unsigned int blinktimeout = 800;
 
-/*
- * thickness of underline and bar cursors
- */
+/* thickness of underline and bar cursors */
 static unsigned int cursorthickness = 2;
 
 /*
